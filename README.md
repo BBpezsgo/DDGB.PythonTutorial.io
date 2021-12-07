@@ -20,40 +20,41 @@
 
 > Határidő: 2022. 01. 04.
 
+✖ > ➰ > ✔️
+
 # Feladatok:
 - ✔️ A weboldal alapja
 - ✖ A weboldal véglegeshez hasonló formája
 
 **Python csoportok:**
 - Szintaxis
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás
+  - ✔️ Példa
   - ✖ Ellenőrzőkvíz
-- Változók és adattípusok
-  - ✖ Leírás
-  - ✖ Példa
+- VMegjegyzések
+  - ✔️ Leírás
+  - ✔️ Példa
+  - ✖ Ellenőrzőkvíz
+- Változók
+  - ✔️ Leírás
+  - ✔️ Példa
   - ✖ Ellenőrzőkvíz
 - Számok
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás
+  - ✔️ Példa
   - ✖ Ellenőrzőkvíz
 - String-ek
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás
+  - ✔️ Példa
   - ✖ Ellenőrzőkvíz
 - Bemenet, kimenet
-  - ✖ Leírás
-  - ✖ Példa
-  - ✖ Oktatóvideó
-  - ✖ Ellenőrzőkvíz
-- Átkonvertálás
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás
+  - ✔️ Példa
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Boolean-ok
-  - ✖ Leírás
-  - ✖ Példa
+  - ➰ Leírás
+  - ➰ Példa
   - ✖ Ellenőrzőkvíz
 - Elágazások
   - ✖ Leírás
