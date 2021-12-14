@@ -89,9 +89,9 @@
                 <button class="tablinks" onclick="openCity(event, 'lsn10')">Listák</button>
                 <button class="tablinks" onclick="openCity(event, 'lsn11')">For</button>
                 <button class="tablinks" onclick="openCity(event, 'lsn12')">While</button>
-                <button class="tablinks" onclick="openCity(event, 'lsn13')">Function-ok</button>
+                <button class="tablinks" onclick="openCity(event, 'lsn13')">Függvények</button>
                 <button class="tablinks" onclick="openCity(event, 'lsn14')">Class-ok</button>
-                <button class="tablinks" onclick="openCity(event, 'lsn15')">Class builder</button>
+                <button class="tablinks" onclick="openCity(event, 'lsn15')">Class construct</button>
                 <button class="tablinks" onclick="openCity(event, 'lsn16')">Try...Except</button>
             </div>
 
@@ -108,7 +108,7 @@
             
                     <div id="myDiv" class="code">
                         if 5 > 2:<br>
-                        &emsp;&emsp;print("5 bagyobb mint 2")<br>
+                        &emsp;&emsp;print("5 nagyobb mint 2")<br>
                     </div>
 
                     <div class="inlineContent" style="background-color: #f5171777; border: 2px solid #f51717;">
@@ -116,7 +116,7 @@
 
                         <div id="myDiv" class="code">
                             if 5 > 2:<br>
-                            print("5 bagyobb mint 2")<br>
+                            print("5 nagyobb mint 2")<br>
                         </div>
                     </div>
 
@@ -125,9 +125,9 @@
                     </p>
                     <div id="myDiv" class="code">
                         if 5 > 2:<br>
-                        &emsp;&emsp;print("5 bagyobb mint 2")<br>
+                        &emsp;&emsp;print("5 nagyobb mint 2")<br>
                         if 5 > 2:<br>
-                        &emsp;&emsp;&emsp;&emsp;print("5 bagyobb mint 2")<br>
+                        &emsp;&emsp;&emsp;&emsp;print("5 nagyobb mint 2")<br>
                     </div>
 
                     <div class="inlineContent" style="background-color: #f5171777; border: 2px solid #f51717;">
@@ -135,8 +135,8 @@
                 
                         <div id="myDiv" class="code">
                             if 5 > 2:<br>
-                            &emsp;&emsp;print("5 bagyobb mint 2")<br>
-                            &emsp;&emsp;&emsp;&emsp;print("5 bagyobb mint 2")<br>
+                            &emsp;&emsp;print("5 nagyobb mint 2")<br>
+                            &emsp;&emsp;&emsp;&emsp;print("5 nagyobb mint 2")<br>
                         </div>
                         <p>
                             Ugyanabban a kódblokkban ugyanannyi szóközt kell használnod, különben a Python hibát ad.
@@ -427,81 +427,10 @@
                         print(random.randrange(1, 10))
                     </div>
 
-
-
-                    <h2>Adattípus lekérése</h2>
-
-                    <p>
-                        Egy változó adattípusát a type() függvénnyel lehet kelérni.
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 5<br>
-                        y = "Sanyi"<br>
-                        print(type(x))<br>
-                        print(type(y))
-                    </div>
-
-                    <h2>Egyszeres vagy dupla idézetek?</h2>
-
-                    <p>
-                        A karakterlánc-változók egyszeres vagy dupla idézőjelek használatával deklarálhatók:
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = "Sanyi"<br>
-                        # ugyan az mint<br>
-                        x = 'Sanyi'<br>
-                    </div>
-
-                    <h2>Kis-nagybetű érzékenység</h2>
-
-                    <div class="warn">
-                        A változónevek megkülönböztetik a kis- és nagybetűket.
-                    </div>
-                    <div id="myDiv" class="code">
-                        a = 4
-                        A = "Sanyi"
-                        # 'A' nem ugyan az a változó, mint az 'a'
-                    </div>
-
-                    <div class="inlineContent">
-                        <h2>Cím</h2>
-                        <div class="tip">
-                            This is a tipp
-                        </div>
-    
-                        <p>Leírás</p>
-                    </div>
-
-                    <div class="warn">
-                        This is a warning
-                    </div>
-
-                    <video controls>
-                        <source src="C:\Users\bazsi\Desktop\SampleVideo_1280x720_1mb.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-
-                    <p>Leírás</p>
-
-                    <div id="myDiv" class="code">
-                        if True:<br>
-                        &emsp;&emsp;print("yes")<br>
-                        elif False:<br>
-                        &emsp;&emsp;print('nonn')<br>
-                        else:<br>
-                        &emsp;&emsp;input("a")<br>
-                        for 0 in range(5):<br><br>
-
-                        while True:<br>
-                        &emsp;&emsp;break:<br>
-                    </div>
-
-                    <p>Leírás</p>
-
                     <iframe src="quiz/1.html"></iframe>
                     <div class="nextPrevButtons">
-                        <button onclick="openCity2('lsn2')">Vissza</button>
-                        <button onclick="openCity2('lsn4')" style="float: right;">Következő</button>
+                        <button onclick="openCity2('lsn3')">Vissza</button>
+                        <button onclick="openCity2('lsn5')" style="float: right;">Következő</button>
                     </div>
                 </div>
 
@@ -545,156 +474,11 @@
                     <div class="warn">
                         Az eredményben a sortörések ugyanarra a helyre kerülnek, mint a kódban.
                     </div>
-                    <p>
-                        A float tudományos számok is lehetnek "e"-vel, amely a 10 hatványát jelzi.
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 35e3<br>
-                        y = 12E4<br>
-                        z = -87.7e100<br>
-
-                        print(type(x))<br>
-                        print(type(y))<br>
-                        print(type(z))
-                    </div>
-
-                    <h2>Complex (összetett szám)</h2>
-
-                    <p>
-                        Az összetett számokat "j"-vel írjuk fel képzeletbeli részként:
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 3+5j<br>
-                        y = 5j<br>
-                        z = -5j<br>
-                        
-                        print(type(x))<br>
-                        print(type(y))<br>
-                        print(type(z))
-                    </div>
-
-                    <h2>Típus Konverzió</h2>
-                    
-                    <p>
-                        Az egyik típusból a másikba konvertálhat a int(), float(), és complex() metódusokkal:
-                    </p>
-
-                    <div id="myDiv" class="code">
-                        x = 1    # int<br>
-                        y = 2.8  # float<br>
-                        z = 1j   # complex<br><br>
-                        
-                        #convert from int to float:<br>
-                        a = float(x)<br><br>
-                        
-                        #convert from float to int:<br>
-                        b = int(y)<br><br>
-                        
-                        #convert from int to complex:<br>
-                        c = complex(x)<br><br>
-                        
-                        print(a)<br>
-                        print(b)<br>
-                        print(c)<br><br>
-                        
-                        print(type(a))<br>
-                        print(type(b))<br>
-                        print(type(c))
-                    </div>
-
-                    <div class="warn">
-                        A komplex számokat nem alakíthatja át más típusú számokká.
-                    </div>
-
-                    <h2>Véletlen szám</h2>
-
-                    <p>
-                        A Python nem rendelkezik random() véletlen számok létrehozására
-                        szolgáló funkcióval, de a Pythonnak van egy beépített modulja a
-                        "random", amely véletlen számok létrehozására használható:
-                    </p>
-
-                    <div id="myDiv" class="code">
-                        import random<br><br>
-
-                        print(random.randrange(1, 10))
-                    </div>
-
-
-
-                    <h2>Adattípus lekérése</h2>
-
-                    <p>
-                        Egy változó adattípusát a type() függvénnyel lehet kelérni.
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 5<br>
-                        y = "Sanyi"<br>
-                        print(type(x))<br>
-                        print(type(y))
-                    </div>
-
-                    <h2>Egyszeres vagy dupla idézetek?</h2>
-
-                    <p>
-                        A karakterlánc-változók egyszeres vagy dupla idézőjelek használatával deklarálhatók:
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = "Sanyi"<br>
-                        # ugyan az mint<br>
-                        x = 'Sanyi'<br>
-                    </div>
-
-                    <h2>Kis-nagybetű érzékenység</h2>
-
-                    <div class="warn">
-                        A változónevek megkülönböztetik a kis- és nagybetűket.
-                    </div>
-                    <div id="myDiv" class="code">
-                        a = 4
-                        A = "Sanyi"
-                        # 'A' nem ugyan az a változó, mint az 'a'
-                    </div>
-
-                    <div class="inlineContent">
-                        <h2>Cím</h2>
-                        <div class="tip">
-                            This is a tipp
-                        </div>
-    
-                        <p>Leírás</p>
-                    </div>
-
-                    <div class="warn">
-                        This is a warning
-                    </div>
-
-                    <video controls>
-                        <source src="C:\Users\bazsi\Desktop\SampleVideo_1280x720_1mb.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-
-                    <p>Leírás</p>
-
-                    <div id="myDiv" class="code">
-                        if True:<br>
-                        &emsp;&emsp;print("yes")<br>
-                        elif False:<br>
-                        &emsp;&emsp;print('nonn')<br>
-                        else:<br>
-                        &emsp;&emsp;input("a")<br>
-                        for 0 in range(5):<br><br>
-
-                        while True:<br>
-                        &emsp;&emsp;break:<br>
-                    </div>
-
-                    <p>Leírás</p>
 
                     <iframe src="quiz/1.html"></iframe>
                     <div class="nextPrevButtons">
-                        <button onclick="openCity2('lsn2')">Vissza</button>
-                        <button onclick="openCity2('lsn4')" style="float: right;">Következő</button>
+                        <button onclick="openCity2('lsn4')">Vissza</button>
+                        <button onclick="openCity2('lsn6')" style="float: right;">Következő</button>
                     </div>
                 </div>
 
@@ -731,201 +515,8 @@
 
                     <iframe src="quiz/1.html"></iframe>
                     <div class="nextPrevButtons">
-                        <button onclick="openCity2('lsn2')">Vissza</button>
-                        <button onclick="openCity2('lsn4')" style="float: right;">Következő</button>
-                    </div>
-                </div>
-
-                <div id="lsn7" class="tabcontent">
-                    <h1>Bemenet-kimenet</h1>
-
-                    <p>
-                        Strings in python are surrounded by either single quotation marks, or double quotation marks.<br>
-                        'hello' is the same as "hello".<br>
-                        You can display a string literal with the print() function:
-                    </p>
-
-                    <div id="myDiv" class="code">
-                        print("Hello")<br>
-                        print('Hello')
-                    </div>
-
-                    <h2>String változó létrehozása</h2>
-
-                    <p>
-                        A szöveg hozzárendelése a változóhoz úgy történik, hogy a változó nevét egy egyenlőségjel követi és a szöveg:
-                    </p>
-                    <div id="myDiv" class="code">
-                        a = "Hello"<br>
-                        print(a)
-                    </div>
-
-                    <h2>Többsoros szövegek</h2>
-
-                    <p>
-                        Többsoros karakterláncot rendelhet egy változóhoz három idézőjel használatával:
-                    </p>
-                    <div id="myDiv" class="code">
-                        a = """Lorem ipsum dolor sit amet,<br>
-                        consectetur adipiscing elit,<br>
-                        sed do eiusmod tempor incididunt<br>
-                        ut labore et dolore magna aliqua."""<br>
-                        print(a)
-                    </div>
-
-                    <div class="warn">
-                        Az eredményben a sortörések ugyanarra a helyre kerülnek, mint a kódban.
-                    </div>
-                    <p>
-                        A float tudományos számok is lehetnek "e"-vel, amely a 10 hatványát jelzi.
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 35e3<br>
-                        y = 12E4<br>
-                        z = -87.7e100<br>
-
-                        print(type(x))<br>
-                        print(type(y))<br>
-                        print(type(z))
-                    </div>
-
-                    <h2>Complex (összetett szám)</h2>
-
-                    <p>
-                        Az összetett számokat "j"-vel írjuk fel képzeletbeli részként:
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 3+5j<br>
-                        y = 5j<br>
-                        z = -5j<br>
-                        
-                        print(type(x))<br>
-                        print(type(y))<br>
-                        print(type(z))
-                    </div>
-
-                    <h2>Típus Konverzió</h2>
-                    
-                    <p>
-                        Az egyik típusból a másikba konvertálhat a int(), float(), és complex() metódusokkal:
-                    </p>
-
-                    <div id="myDiv" class="code">
-                        x = 1    # int<br>
-                        y = 2.8  # float<br>
-                        z = 1j   # complex<br><br>
-                        
-                        #convert from int to float:<br>
-                        a = float(x)<br><br>
-                        
-                        #convert from float to int:<br>
-                        b = int(y)<br><br>
-                        
-                        #convert from int to complex:<br>
-                        c = complex(x)<br><br>
-                        
-                        print(a)<br>
-                        print(b)<br>
-                        print(c)<br><br>
-                        
-                        print(type(a))<br>
-                        print(type(b))<br>
-                        print(type(c))
-                    </div>
-
-                    <div class="warn">
-                        A komplex számokat nem alakíthatja át más típusú számokká.
-                    </div>
-
-                    <h2>Véletlen szám</h2>
-
-                    <p>
-                        A Python nem rendelkezik random() véletlen számok létrehozására
-                        szolgáló funkcióval, de a Pythonnak van egy beépített modulja a
-                        "random", amely véletlen számok létrehozására használható:
-                    </p>
-
-                    <div id="myDiv" class="code">
-                        import random<br><br>
-
-                        print(random.randrange(1, 10))
-                    </div>
-
-
-
-                    <h2>Adattípus lekérése</h2>
-
-                    <p>
-                        Egy változó adattípusát a type() függvénnyel lehet kelérni.
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 5<br>
-                        y = "Sanyi"<br>
-                        print(type(x))<br>
-                        print(type(y))
-                    </div>
-
-                    <h2>Egyszeres vagy dupla idézetek?</h2>
-
-                    <p>
-                        A karakterlánc-változók egyszeres vagy dupla idézőjelek használatával deklarálhatók:
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = "Sanyi"<br>
-                        # ugyan az mint<br>
-                        x = 'Sanyi'<br>
-                    </div>
-
-                    <h2>Kis-nagybetű érzékenység</h2>
-
-                    <div class="warn">
-                        A változónevek megkülönböztetik a kis- és nagybetűket.
-                    </div>
-                    <div id="myDiv" class="code">
-                        a = 4
-                        A = "Sanyi"
-                        # 'A' nem ugyan az a változó, mint az 'a'
-                    </div>
-
-                    <div class="inlineContent">
-                        <h2>Cím</h2>
-                        <div class="tip">
-                            This is a tipp
-                        </div>
-    
-                        <p>Leírás</p>
-                    </div>
-
-                    <div class="warn">
-                        This is a warning
-                    </div>
-
-                    <video controls>
-                        <source src="C:\Users\bazsi\Desktop\SampleVideo_1280x720_1mb.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-
-                    <p>Leírás</p>
-
-                    <div id="myDiv" class="code">
-                        if True:<br>
-                        &emsp;&emsp;print("yes")<br>
-                        elif False:<br>
-                        &emsp;&emsp;print('nonn')<br>
-                        else:<br>
-                        &emsp;&emsp;input("a")<br>
-                        for 0 in range(5):<br><br>
-
-                        while True:<br>
-                        &emsp;&emsp;break:<br>
-                    </div>
-
-                    <p>Leírás</p>
-
-                    <iframe src="quiz/1.html"></iframe>
-                    <div class="nextPrevButtons">
-                        <button onclick="openCity2('lsn2')">Vissza</button>
-                        <button onclick="openCity2('lsn4')" style="float: right;">Következő</button>
+                        <button onclick="openCity2('lsn5')">Vissza</button>
+                        <button onclick="openCity2('lsn8')" style="float: right;">Következő</button>
                     </div>
                 </div>
 
@@ -959,9 +550,11 @@
                     <p>
                         Szinte minden értéket a rendszer arra értékel hogy van-e valamilyen tartalma.<br><br>
 
-                        Bármely szöveg True, kivéve az üres szövegeket.<br>
-                        Bármely szám az True, kivéve 0.<br>
-                        Bármely lista, sor, halmaz és szótár True, kivéve az üreseket.<br>
+                        <ul>
+                            <li>Bármely szöveg True, kivéve az üres szövegeket.</li>
+                            <li>Bármely szám az True, kivéve 0.</li>
+                            <li>Bármely lista, sor, halmaz és szótár True, kivéve az üreseket.</li>
+                        </ul>
                     </p>
                     <div id="myDiv" class="code">
                         # A következőek mind True-t adnak vissza<br>
@@ -970,159 +563,363 @@
                         bool(["alma", "körte", "banán"])
                     </div>
 
-                    <div class="warn">
-                        Az eredményben a sortörések ugyanarra a helyre kerülnek, mint a kódban.
-                    </div>
-                    <p>
-                        A float tudományos számok is lehetnek "e"-vel, amely a 10 hatványát jelzi.
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 35e3<br>
-                        y = 12E4<br>
-                        z = -87.7e100<br>
-
-                        print(type(x))<br>
-                        print(type(y))<br>
-                        print(type(z))
-                    </div>
-
-                    <h2>Complex (összetett szám)</h2>
+                    <h2>Egyes értékek hamisak</h2>
 
                     <p>
-                        Az összetett számokat "j"-vel írjuk fel képzeletbeli részként:
+                        Valójában nem sok olyan érték van, amely kiértékelve False, kivéve az üres értékeket, mint például a (), [], {}, "",
+                        a 0 és az érték None. És persze az False érték kiértékítve False.<br><br>
+
+                        <ul>
+                            <li>Bármely szöveg True, kivéve az üres szövegeket.</li>
+                            <li>Bármely szám az True, kivéve 0.</li>
+                            <li>Bármely lista, sor, halmaz és szótár True, kivéve az üreseket.</li>
+                        </ul>
                     </p>
                     <div id="myDiv" class="code">
-                        x = 3+5j<br>
-                        y = 5j<br>
-                        z = -5j<br>
-                        
-                        print(type(x))<br>
-                        print(type(y))<br>
-                        print(type(z))
+                        bool(False)<br>
+                        bool(None)<br>
+                        bool(0)<br>
+                        bool("")<br>
+                        bool(())<br>
+                        bool([])<br>
+                        bool({})
                     </div>
-
-                    <h2>Típus Konverzió</h2>
-                    
-                    <p>
-                        Az egyik típusból a másikba konvertálhat a int(), float(), és complex() metódusokkal:
-                    </p>
-
-                    <div id="myDiv" class="code">
-                        x = 1    # int<br>
-                        y = 2.8  # float<br>
-                        z = 1j   # complex<br><br>
-                        
-                        #convert from int to float:<br>
-                        a = float(x)<br><br>
-                        
-                        #convert from float to int:<br>
-                        b = int(y)<br><br>
-                        
-                        #convert from int to complex:<br>
-                        c = complex(x)<br><br>
-                        
-                        print(a)<br>
-                        print(b)<br>
-                        print(c)<br><br>
-                        
-                        print(type(a))<br>
-                        print(type(b))<br>
-                        print(type(c))
-                    </div>
-
-                    <div class="warn">
-                        A komplex számokat nem alakíthatja át más típusú számokká.
-                    </div>
-
-                    <h2>Véletlen szám</h2>
-
-                    <p>
-                        A Python nem rendelkezik random() véletlen számok létrehozására
-                        szolgáló funkcióval, de a Pythonnak van egy beépített modulja a
-                        "random", amely véletlen számok létrehozására használható:
-                    </p>
-
-                    <div id="myDiv" class="code">
-                        import random<br><br>
-
-                        print(random.randrange(1, 10))
-                    </div>
-
-
-
-                    <h2>Adattípus lekérése</h2>
-
-                    <p>
-                        Egy változó adattípusát a type() függvénnyel lehet kelérni.
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = 5<br>
-                        y = "Sanyi"<br>
-                        print(type(x))<br>
-                        print(type(y))
-                    </div>
-
-                    <h2>Egyszeres vagy dupla idézetek?</h2>
-
-                    <p>
-                        A karakterlánc-változók egyszeres vagy dupla idézőjelek használatával deklarálhatók:
-                    </p>
-                    <div id="myDiv" class="code">
-                        x = "Sanyi"<br>
-                        # ugyan az mint<br>
-                        x = 'Sanyi'<br>
-                    </div>
-
-                    <h2>Kis-nagybetű érzékenység</h2>
-
-                    <div class="warn">
-                        A változónevek megkülönböztetik a kis- és nagybetűket.
-                    </div>
-                    <div id="myDiv" class="code">
-                        a = 4
-                        A = "Sanyi"
-                        # 'A' nem ugyan az a változó, mint az 'a'
-                    </div>
-
-                    <div class="inlineContent">
-                        <h2>Cím</h2>
-                        <div class="tip">
-                            This is a tipp
-                        </div>
-    
-                        <p>Leírás</p>
-                    </div>
-
-                    <div class="warn">
-                        This is a warning
-                    </div>
-
-                    <video controls>
-                        <source src="C:\Users\bazsi\Desktop\SampleVideo_1280x720_1mb.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-
-                    <p>Leírás</p>
-
-                    <div id="myDiv" class="code">
-                        if True:<br>
-                        &emsp;&emsp;print("yes")<br>
-                        elif False:<br>
-                        &emsp;&emsp;print('nonn')<br>
-                        else:<br>
-                        &emsp;&emsp;input("a")<br>
-                        for 0 in range(5):<br><br>
-
-                        while True:<br>
-                        &emsp;&emsp;break:<br>
-                    </div>
-
-                    <p>Leírás</p>
 
                     <iframe src="quiz/1.html"></iframe>
                     <div class="nextPrevButtons">
-                        <button onclick="openCity2('lsn2')">Vissza</button>
-                        <button onclick="openCity2('lsn4')" style="float: right;">Következő</button>
+                        <button onclick="openCity2('lsn6')">Vissza</button>
+                        <button onclick="openCity2('lsn9')" style="float: right;">Következő</button>
+                    </div>
+                </div>
+
+                <div id="lsn9" class="tabcontent">
+                    <h1>Elágazások</h1>
+
+                    <p>
+                        Az if utasítás mellett egy olyan kifejezés következik, aminek van logikai értéke. A number > 100 kifejezés, ha a number értéke nagyobb mint 100, akkor True, amúgy False kiértékelési értéket kap. A sort mindig a : zárja, erre figyeljünk.
+                    </p>
+                    <div id="myDiv" class="code">
+                        number = int(input("Írj be egy számot: "))<br>
+                        if number > 100:<br>
+                        &emsp;&emsp;print("A szám nagyobb mint 100")
+                    </div>
+
+                    <p>
+                        Az else és az if egy párt alkotnak, ezért azonos bekezdést kell alkalmazni előttük (azonos bekezdési szintent (indentation level) kell lenniük).
+                    </p>
+                    <div id="myDiv" class="code">
+                        number = int(input("Írj be egy számot: "))<br>
+                        if number > 100:<br>
+                        &emsp;&emsp;print("A szám nagyobb mint 100")<br>
+                        else:<br>
+                        &emsp;&emsp;print("A szám nem nagyobb mint 100")
+                    </div>
+
+                    <p>
+                        Ha 99-et írunk be, akkor az első feltétel (number > 100) hamis lesz, így ugrunk a következőre (number == 100), de ez is hamis.Ha 100-at írunk be, akkor az első feltétel (number > 100) hamis lesz, így ugrunk a következőre (number == 100) ami igaz lesz,
+                    </p>
+                    <div id="myDiv" class="code">
+                        number = int(input("Írj be egy számot: "))<br>
+                        if number > 100:<br>
+                        &emsp;&emsp;print("A szám nagyobb mint 100")<br>
+                        elif number == 100:<br>
+                        &emsp;&emsp;print("A szám pont 100")
+                        else:<br>
+                        &emsp;&emsp;print("A szám kissebb mint 100")
+                    </div>
+
+                    <iframe src="quiz/1.html"></iframe>
+                    <div class="nextPrevButtons">
+                        <button onclick="openCity2('lsn8')">Vissza</button>
+                        <button onclick="openCity2('lsn10')" style="float: right;">Következő</button>
+                    </div>
+                </div>
+
+                <div id="lsn10" class="tabcontent">
+                    <h1>Listák</h1>
+
+                    <div id="myDiv" class="code">
+                        mylist = ["apple", "banana", "cherry"]
+                    </div>
+
+                    <p>
+                        A listák több elem tárolására szolgálnak egyetlen változóban.<br>
+                        A listák a Pythonban az adatgyűjtemények tárolására használt 4 beépített adattípus egyike, a másik 3 pedig a Tuple , Set és Dictionary , amelyek mindegyike eltérő minőségű és felhasználású.<br>
+                        A listák szögletes zárójelekkel jönnek létre.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        thislist = ["Alma", "Banán", "Cseresznye"]<br>
+                        print(thislist)
+                    </div>
+
+                    <p>
+                        A listaelemek rendezettek, változtathatók, és engedélyezik az értékek megkettőzését.<br>
+                        A listaelemek sorszámozva vannak, az első elem sorszáma [0], a második elem sorszáma [1], stb.
+                    </p>
+
+                    <p>
+                        Ha azt mondjuk, hogy a listák sorrendben vannak, az azt jelenti, hogy a tételeknek meghatározott sorrendje van, és ez a sorrend nem változik.<br>
+                        Ha új elemeket ad hozzá egy listához, az új elemek a lista végére kerülnek.
+                    </p>
+                    <div class="warn">Vannak olyan listamódszerek, amelyek megváltoztatják a sorrendet, de általában: a tételek sorrendje nem változik.</div>
+
+                    <h2>Ugyan olyan elemek</h2>
+
+                    <p>Mivel a listák sorszámozottak, a listákban lehetnek azonos értékű elemek.</p>
+
+                    <div id="myDiv" class="code">
+                        thislist = ["Alma", "Banán", "Cseresznye", "Alma", "Cseresznye"]<br>
+                        print(thislist)
+                    </div>
+
+                    <h2>A lista hossza</h2>
+
+                    <p>A lista hány elemének meghatározásához használja a következő len() függvényt.</p>
+
+                    <div id="myDiv" class="code">
+                        thislist = ["Alma", "Banán", "Cseresznye", "Alma", "Cseresznye"]<br>
+                        print(len(thislist))
+                    </div>
+
+                    <h2>Listaelemek – Adattípusok</h2>
+
+                    <p>A listaelemek bármilyen adattípusúak lehetnek.</p>
+
+                    <div id="myDiv" class="code">
+                        list1 = ["Alma", "Banán", "Cseresznye"]<br>
+                        list2 = [1, 5, 7, 9, 3]<br>
+                        list3 = [True, False, False]
+                    </div>
+
+                    <p>A lista különböző típusú adatokat tartalmazhat.</p>
+
+                    <div id="myDiv" class="code">
+                        list1 = ["abc", 34, True, 40, "Banán"]
+                    </div>
+
+                    <h2>type()</h2>
+                    
+                    <p>A Python szemszögéből a listák 'list' adattípusú objektumokként vannak definiálva.</p>
+
+                    <div id="myDiv" class="code">
+                        mylist = ["Alma", "Banán", "Cseresznye"]<br>
+                        print(type(mylist))
+                    </div>
+
+                    <h2>A list() konstruktor</h2>
+                    
+                    <p>Lehetőség van a list() konstruktor használatára is új lista létrehozásakor.</p>
+
+                    <div id="myDiv" class="code">
+                        thislist = list(("Alma", "Banán", "Cseresznye")) # Figyelj a kettős zárójelre!<br>
+                        print(thislist)
+                    </div>
+
+                    <iframe src="quiz/1.html"></iframe>
+                    <div class="nextPrevButtons">
+                        <button onclick="openCity2('lsn9')">Vissza</button>
+                        <button onclick="openCity2('lsn11')" style="float: right;">Következő</button>
+                    </div>
+                </div>
+
+                <div id="lsn11" class="tabcontent">
+                    <h1>For</h1>
+
+                    <p>
+                        A for és in között szerepel annak a változónak (vagy változóknak!) a neve, amin keresztül el akarjuk érni az aktuális elemet (ez a példában a name nevet kapta). Itt nem szerepelhet másféle kifejezés.
+Az in után következik az objektum neve (vagy tetszőleges kifejezés), amit iterálunk (a példában ez a people változó)
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        people = ["Sanyi", "Bob", "Anita"]<br><br>
+                        for name in people:<br>
+                        &emsp;&emsp;print(name)
+                    </div>
+
+                    <iframe src="quiz/1.html"></iframe>
+                    <div class="nextPrevButtons">
+                        <button onclick="openCity2('lsn10')">Vissza</button>
+                        <button onclick="openCity2('lsn12')" style="float: right;">Következő</button>
+                    </div>
+                </div>
+
+                <div id="lsn12" class="tabcontent">
+                    <h1>While</h1>
+
+                    <p>
+                        A while melletti feltételétől függ, hogy meddig kell a while blokkját ismételtetni. Ezt magyarul bentmaradási feltételnek szokták hívni.
+                    </p>
+
+                    <p>
+                        A sums változóban tároljuk majd a részösszeget, (tehát minden iterációban ehhez a változóhoz adjuk majd a begépelt számokat). Ez után kiírjuk az Írjon be egy számot: üzenetet, és a begépelt szöveget eltároljuk a next_number változóban, majd következik is a ciklus.
+                    </p>
+                    <div id="myDiv" class="code">
+                        sums = 0<br><br>
+                        next_number = input("Írj be egy számot: ")<br>
+                        while next_number != "":<br>
+                        &emsp;&emsp;sums = sums + float(next_number)<br>
+                        &emsp;&emsp;next_number = input("Írj be egy számot: ")<br><br>
+                        print("Az összeg:", sums)
+                    </div>
+
+                    <p>
+                        Ez egy igen béna kis példa, de a lényeg benne van: ha a counter változó értéke 2-vel osztható, akkor kiírjuk hogy páros és indítjuk is az új iterációt. Ha az érték páratlan, akkor sosem lépünk be a feltétel törzsébe, és megjelenik a páratlan felirat. A "break"paranccsal azonnal befejeződik a ciklus.
+                    </p>
+                    <div id="myDiv" class="code">
+                        counter = 0<br><br>
+                        while counter <= 10:<br>
+                        &emsp;&emsp;counter += 1<br><br>
+                        &emsp;&emsp;if counter % 2 == 0:<br>
+                        &emsp;&emsp;&emsp;&emsp;print(counter, "páros")<br>
+                        &emsp;&emsp;&emsp;&emsp;continue<br>
+                        &emsp;&emsp;print(counter, "páratlan")
+                        print("Az összeg:", sums)
+                    </div>
+
+                    <iframe src="quiz/1.html"></iframe>
+                    <div class="nextPrevButtons">
+                        <button onclick="openCity2('lsn11')">Vissza</button>
+                        <button onclick="openCity2('lsn13')" style="float: right;">Következő</button>
+                    </div>
+                </div>
+
+                <div id="lsn13" class="tabcontent">
+                    <h1>Függvények</h1>
+
+                    <p>
+                        A függvényt magát, egy def paranccsal határozzuk meg.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        def my_function():<br>
+                        &emsp;&emsp;print("Helló egy függvényből")
+                    </div>
+
+                    <p>
+                        A függvényt magát, egy def paranccsal határozzuk meg.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        def my_function():<br>
+                        &emsp;&emsp;print("Helló egy függvényből")<br><br>
+                        my_function()
+                    </div>
+
+                    <h2>Argumentumok</h2>
+
+                    <p>
+                        A következő példában egy függvény van egy argumentummal (fname). A függvény létrehozásakor egy keresztnevet adunk át, amely a függvényen belül a teljes név kinyomtatására szolgál.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        def my_function(fname):<br>
+                        &emsp;&emsp;print(fname + "Refsens")<br><br>
+                        my_function("Sanyi")<br>
+                        my_function("Bob")<br>
+                        my_function("Anita")
+                    </div>
+
+                    <p>
+                        Ez a függvény 2 argumentumot vár, és 2 argumentumot kap.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        def my_function(fname, lname):<br>
+                        &emsp;&emsp;print(fname + " " + lname)<br><br>
+                        my_function("Nagy", "Sanyi")
+                    </div>
+
+                    <div class="warn">
+                        Ha 1 vagy 3 argumentummal próbálja meghívni a függvényt, hibaüzenetet fog kapni.
+                    </div>
+
+                    <p>
+                        Akármilyen adattípusú argumentumot küldhet egy függvénynek (karakterlánc, szám, lista, szótár stb.), és a függvény ugyanazon adattípusként kezeli.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        def my_function(food):<br>
+                        &emsp;&emsp;for x in food:<br>
+                        &emsp;&emsp;&emsp;&emsp;print(x)<br><br>
+                        fruits = ["Alma", "Banán", "Cseresznye"]<br>
+                        my_function(fruits)
+                    </div>
+
+                    <iframe src="quiz/1.html"></iframe>
+                    <div class="nextPrevButtons">
+                        <button onclick="openCity2('lsn12')">Vissza</button>
+                        <button onclick="openCity2('lsn14')" style="float: right;">Következő</button>
+                    </div>
+                </div>
+
+                <div id="lsn14" class="tabcontent">
+                    <h1>Class-ok</h1>
+
+                    <p>
+                        A Python egy objektum orientált programozási nyelv.
+                        A Pythonban szinte minden objektum, tulajdonságaival és módszereivel együtt.
+                        Az osztály olyan, mint egy objektumkonstruktor, vagy egy "tervrajz" az objektumok létrehozásához.
+                    </p>
+
+                    <h2>Class létrehozása</h2>
+
+                    <div id="myDiv" class="code">
+                        class MyClass:<br>
+                        &emsp;&emsp;x = 5
+                    </div>
+
+
+                    <h2>Objektum létrehozása</h2>
+
+                    <div id="myDiv" class="code">
+                        p1 = MyClass()<br>
+                        print(p1.x)
+                    </div>
+
+                    <h2>Az __init__() függvény</h2>
+
+                    <p>
+                        A fenti példák osztályok és objektumok a legegyszerűbb formájukban, és nem igazán hasznosak a valós alkalmazásokban.<br>
+                        Az osztályok jelentésének megértéséhez meg kell értenünk a beépített __init__() függvényt.<br>
+                        Minden osztálynak van egy __init__() nevű függvénye, amely mindig végrehajtásra kerül az osztály indításakor.<br>
+                        Használd az __init__() függvényt, hogy értékeket rendeld az objektum tulajdonságaihoz, vagy más műveleteket, amelyeket az objektum létrehozásakor kell elvégezni.<br>
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        class Person:<br>
+                        def __init__(self, name, age):<br>
+                        &emsp;&emsp;self.name = name<br>
+                        &emsp;&emsp;self.age = age<br><br>
+                        p1 = Person("John", 36)<br><br>
+                        print(p1.name)<br>
+                        print(p1.age)
+                    </div>
+
+                    <iframe src="quiz/1.html"></iframe>
+                    <div class="nextPrevButtons">
+                        <button onclick="openCity2('lsn13')">Vissza</button>
+                        <button onclick="openCity2('lsn15')" style="float: right;">Következő</button>
+                    </div>
+                </div>
+
+                <div id="lsn15" class="tabcontent">
+                    <h1>Class construct</h1>
+
+                    <iframe src="quiz/1.html"></iframe>
+                    <div class="nextPrevButtons">
+                        <button onclick="openCity2('lsn14')">Vissza</button>
+                        <button onclick="openCity2('lsn16')" style="float: right;">Következő</button>
+                    </div>
+                </div>
+
+                <div id="lsn16" class="tabcontent">
+                    <h1>Try...Except</h1>
+
+                    <iframe src="quiz/1.html"></iframe>
+                    <div class="nextPrevButtons">
+                        <button onclick="openCity2('lsn15')">Vissza</button>
+                        <button onclick="openCity2('lsn17')" style="float: right;">Következő</button>
                     </div>
                 </div>
             </div>
@@ -1339,7 +1136,7 @@
             function getKeywordPos(typ, txt, func) {
                 var words, i, pos, rpos = -1, rpos2 = -1, patt;
                 if (typ == "js") {
-                    words = ["do", "while", "break", "def", "if", "elif", "else", "for", "in", "import"];
+                    words = ["do", "while", "break", "def", "if", "elif", "else", "for", "in", "import", "continue"];
                 }
                 for (i = 0; i < words.length; i++) {
                     pos = txt.indexOf(words[i]);
@@ -1358,7 +1155,7 @@
             function getConstantPos(typ, txt, func) {
                 var words, i, pos, rpos = -1, rpos2 = -1, patt;
                 if (typ == "js") {
-                    words = ["True", "False"];
+                    words = ["True", "False", "None"];
                 }
                 for (i = 0; i < words.length; i++) {
                     pos = txt.indexOf(words[i]);
