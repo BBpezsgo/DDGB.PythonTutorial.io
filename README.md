@@ -28,70 +28,55 @@
 
 **Python csoportok:**
 - Szintaxis
-  - ✔️ Leírás
-  - ✔️ Példa
+  - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - VMegjegyzések
-  - ✔️ Leírás
-  - ✔️ Példa
+  - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - Változók
-  - ✔️ Leírás
-  - ✔️ Példa
+  - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - Számok
-  - ✔️ Leírás
-  - ✔️ Példa
+  - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - String-ek
-  - ✔️ Leírás
-  - ✔️ Példa
+  - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - Bemenet, kimenet
-  - ✔️ Leírás
-  - ✔️ Példa
+  - ✔️ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Boolean-ok
-  - ➰ Leírás
-  - ➰ Példa
+  - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - Elágazások
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Listák
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - For
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - While
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Function-ok
-  - ✖ Leírás
-  - ✖ Példa
+  - ✔️ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Class-ok
-  - ✖ Leírás
-  - ✖ Példa
+  - ➰ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Class builder
-  - ✖ Leírás
-  - ✖ Példa
+  - ➰ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Try...Except
-  - ✖ Leírás
-  - ✖ Példa
+  - ✖ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
