@@ -11,12 +11,12 @@ html,
 body {
     height: 100%;
     margin: 0;
-    background-color: #111;
+    background-color: #eee;
 }
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #ccc;
     top: 0;
     position: fixed;
     width: 100%;
@@ -35,10 +35,10 @@ body {
 .navbar .button {
     float: left;
     display: block;
-    color: #ccc;
+    color: #111;
     text-align: center;
     text-decoration: none;
-    background-color: #666;
+    background-color: #999;
     margin: 10px 5px;
     padding: 5px 10px;
     transition-duration: 200ms;
@@ -63,7 +63,7 @@ body {
 
 .navbar p {
     float: left;
-    color: #fff;
+    color: #111;
     font-size: larger;
     font-weight: bold;
     transform: translate(0%, -20%);
@@ -84,7 +84,7 @@ body {
     bottom: 0px;
     float: left;
     width: 30%;
-    background-color: #444;
+    background-color: #bbb;
     padding: 15px;
     overflow-y: auto;
     flex: 0 1 30%;
@@ -134,7 +134,7 @@ body {
     flex: 1 1 100%;
     height: 100%;
     overflow-y: auto;
-    color: #ccc;
+    color: #222;
     padding: 20px 20px 60px 20px;
 }
 
@@ -144,7 +144,8 @@ body {
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
-    color: #B2DFDB;
+    color: #283a38;
+    margin: 10px 0px;
 }
 
 .warn {
@@ -153,7 +154,14 @@ body {
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
-    color: #FFCCBC;
+    color: #362b27;
+    margin: 10px 0px;
+}
+
+.warn svg, .wrong svg, .tip svg {
+    display: inline-block;
+    margin-bottom: -5px;
+    margin-right: 5px;
 }
 
 .wrong {
@@ -162,7 +170,8 @@ body {
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
-    color: #FFCCBC;
+    color: #3b302c;
+    margin: 10px 0px;
 }
 
 .code {
@@ -233,10 +242,13 @@ video {
 }
 
 .inlineContent {
-    background-color: #222;
+    background-color: #0001;
     padding: 10px;
     border-radius: 10px;
     margin: 20px 0px;
+    box-shadow: 2px 2px 4px #0005;
+    border-top: 1px solid #fff9;
+    border-left: 1px solid #fff9;
 }
 
 .inlineContent > h2 {
@@ -255,4 +267,9 @@ video {
 
 .warn, .wrong, .tip {
     margin-bottom: 10px;
+}
+
+.inlineContentBad {
+    background-color: #f5171777 !important;
+    border: 2px solid #f51717 !important;
 }
