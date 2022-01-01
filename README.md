@@ -29,7 +29,7 @@
 **Python csoportok:**
 - Szintaxis
   - ✔️ Leírás + példák
-  - ✖ Ellenőrzőkvíz
+  - ✔️ Ellenőrzőkvíz
 - VMegjegyzések
   - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
