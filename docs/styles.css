@@ -208,7 +208,7 @@ body {
     cursor: pointer;
     display: inline-block;
 
-    transition-duration: 500ms;
+    transition-duration: 200ms;
 
     background-color: #bbb;
     color: #222;
@@ -272,4 +272,16 @@ video {
 .inlineContentBad {
     background-color: #f5171777 !important;
     border: 2px solid #f51717 !important;
+}
+
+iframe {
+    box-shadow: 2px 2px 4px #0005;
+}
+
+.pythonLogo {
+    transition-duration: 200ms;
+}
+
+.pythonLogo:hover {
+    transform: scale(1.2);
 }

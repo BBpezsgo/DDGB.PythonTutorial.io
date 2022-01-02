@@ -7,11 +7,13 @@ body {
 
 body {
 	font-size: 20px;
-	color: #eee;
+	color: #111;
   font-weight: 300;
   text-align: center;
-  background-color: #444;
+  background-color: #0001;
   padding: 10px;
+  border-top: 1px solid #fff9;
+  border-left: 1px solid #fff9;
 }
 
 h1 {
@@ -19,8 +21,8 @@ h1 {
   margin: 0px;
   padding: 10px;
   font-size: 20px;
-  background-color: #393939;
-  color: #fff;
+  background-color: #c9c9c9;
+  color: #111;
   border-radius: 5px;
   font-weight: bold;
 }
@@ -46,14 +48,15 @@ button {
   color: #000;
   font-weight: bold;
   padding: 8px 12px;
+  transition-duration: 200ms;
 }
 
   button:hover {
-    background-color: #90CAF9;
+    background-color: #5ab1f8;
   }
 
   button:active {
-    background-color: #eee;
+    background-color: #b5deff;
   }
 
 .slide {
@@ -101,7 +104,7 @@ button {
 }
 
 :root {
-  --form-control-color: #eee;
+  --form-control-color: #111;
 }
 
 *,

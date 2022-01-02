@@ -20,18 +20,13 @@
 
     <script>
         (function () {
-            // Functions
             function buildQuiz() {
-                // variable to store the HTML output
                 const output = [];
 
-                // for each question...
                 myQuestions.forEach((currentQuestion, questionNumber) => {
-                    // variable to store the list of possible answers
                     const answers = [];
 
                     if (currentQuestion.type == "select") {
-                        // and for each available answer...
                         for (letter in currentQuestion.answers) {
 
                             answers.push(
@@ -44,8 +39,8 @@
 
                         output.push(
                             `<div class="slide">
-                                    <div class="wrong" id="wrong${questionNumber}"><img src="wrong.png">Wrong answer!</div>
-                                    <div class="correct" id="correct${questionNumber}"><img src="correct.png">Correct!</div>
+                                    <div class="wrong" id="wrong${questionNumber}"><img src="wrong.png">Helytelen válasz!</div>
+                                    <div class="correct" id="correct${questionNumber}"><img src="correct.png">Helyes!</div>
                                     <div class="question"> ${currentQuestion.question} </div>
                                     <div class="answers"> ${answers.join("")} </div>
                                 </div>`
@@ -55,8 +50,8 @@
 
                         output.push(
                             `<div class="slide">
-                                <div class="wrong" id="wrong${questionNumber}"><img src="wrong.png">Wrong answer!</div>
-                                <div class="correct" id="correct${questionNumber}"><img src="correct.png">Correct!</div>
+                                <div class="wrong" id="wrong${questionNumber}"><img src="wrong.png">Helytelen válasz!</div>
+                                <div class="correct" id="correct${questionNumber}"><img src="correct.png">Helyes!</div>
                                     <div class="question"> Egészítsd ki! </div>
                                 <div class="answers"> ${answers.join("")} </div>
                             </div>`
@@ -64,13 +59,10 @@
                     }
                 });
 
-                // finally combine our output list into one string of HTML and put it on the page
                 quizContainer.innerHTML = output.join('');
             }
 
             function showResults() {
-
-                // gather answer containers from our quiz
                 const answerContainers = quizContainer.querySelectorAll('.answers');
 
                 let numCorrect = 0;
@@ -142,7 +134,7 @@
             const resultsContainer = document.getElementById('results');
             const submitButton = document.getElementById('submit');
             const myQuestions = [
-            {
+                {
                     type: "type",
                     text: "{}('Hello world')<br><br><b>Kimenet: 'Hello world'</b>",
                     correctAnswer: "print"
