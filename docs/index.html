@@ -301,8 +301,8 @@
                             A változónevek megkülönböztetik a kis- és nagybetűket.
                         </div>
                         <div id="myDiv" class="code">
-                            a = 4
-                            A = "Sanyi"
+                            a = 4<br>
+                            A = "Sanyi"<br>
                             # 'A' nem ugyan az a változó, mint az 'a'
                         </div>
                     </div>
@@ -670,7 +670,7 @@
                         if number > 100:<br>
                         &emsp;&emsp;print("A szám nagyobb mint 100")<br>
                         elif number == 100:<br>
-                        &emsp;&emsp;print("A szám pont 100")
+                        &emsp;&emsp;print("A szám pont 100")<br>
                         else:<br>
                         &emsp;&emsp;print("A szám kissebb mint 100")
                     </div>
@@ -992,6 +992,141 @@
                 <div id="lsn16" class="tabcontent">
                     <h1>Try...Except</h1>
 
+                    <p>
+                        A try blokk lehetővé teszi egy kódblokk tesztelését hibák keresésére.<br>
+                        Az except blokk segítségével kezelheted a hibát.<br>
+                        A finally blokk lehetővé teszi a kód végrehajtását,
+                        függetlenül a try- és except blokkok eredményétől.
+                    </p>
+
+                    <h2>Kivételkezelés</h2>
+
+                    <p>
+                        Ha hiba történik, vagy kivétel(ahogy mi hívjuk),
+                        a Python általában leáll, és hibaüzenetet generál.<br>
+                        Ezek a kivételek a try utasítással kezelhetők:
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        try:<br>
+                        &emsp;&emsp;print(x)<br>
+                        except:<br>
+                        &emsp;&emsp;print("Kivétel történt")
+                    </div>
+
+                    <p>
+                        Mivel a try blokk hibát jelez, a except blokk végrehajtásra kerül.<br>
+                        A try blokk nélkül a program összeomlik, és hibát jelez:
+                    </p>
+
+                    <div class="wrong">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px"
+                            viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                            <g id="icon">
+                                <path d="M1,21h22L12,2,1,21zm12,-3h-2v-2h2v2zm0,-4h-2v-4h2v4z" fill="#000000" />
+                            </g>
+                        </svg>
+                        Ez az utasítás hibát jelez, mivel az x nincs definiálva:
+                        <div id="myDiv" class="code" style="margin-top: 20px;">
+                            print(x)
+                        </div>
+                    </div>
+
+                    <h2>Több kivétel</h2>
+
+                    <p>
+                        Tetszőleges számú kivételblokkot definiálhatsz, pl. ha egy speciális kódblokkot szeretnél
+                        végrehajtani egy speciális hiba esetén:
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        # Írjon ki egy üzenetet, ha a try blokk NameError-t ad, és egy másikat egyéb hibák esetén:<br>
+                        try:<br>
+                        &emsp;&emsp;print(x)<br>
+                        except NameError:<br>
+                        &emsp;&emsp;print("Az x változó nincs definiálva")<br>
+                        except:<br>
+                        &emsp;&emsp;print("Valami más hiba történt")
+                    </div>
+
+                    <h2>Else</h2>
+
+                    <p>
+                        Az else kulcsszó segítségével megadhat egy kódblokkot, amelyet akkor kell végrehajtani, ha nem
+                        történik hiba.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        # Ebben a példában a try blokk nem generál hibát:<br>
+                        try:<br>
+                        &emsp;&emsp;print("Hello")<br>
+                        except:<br>
+                        &emsp;&emsp;print("Valami elromlott")<br>
+                        else:<br>
+                        &emsp;&emsp;print("Nem történt semmi baj")
+                    </div>
+
+                    <h2>Finally</h2>
+
+                    <p>
+                        A finally blokk ha meg van adva, végrehajtásra kerül függetlenül attól, hogy a try blokk hibát
+                        okoz-e vagy sem.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        try:<br>
+                        &emsp;&emsp;print(x)<br>
+                        except:<br>
+                        &emsp;&emsp;print("Valami elromlott")<br>
+                        finally:<br>
+                        &emsp;&emsp;print("A 'try except' befejeződött")
+                    </div>
+
+                    <p>
+                        Ez hasznos lehet az objektumok bezárásához és az erőforrások megtisztításához.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        # Próbáljon meg megnyitni és írni egy nem írható fájlt:<br>
+                        try:<br>
+                        &emsp;&emsp;f = open("demofile.txt")<br>
+                        &emsp;&emsp;try:<br>
+                        &emsp;&emsp;&emsp;&emsp;f.write("Lorum Ipsum")<br>
+                        &emsp;&emsp;except:<br>
+                        &emsp;&emsp;&emsp;&emsp;print("Valami hiba történt a fájlba írás közben")<br>
+                        &emsp;&emsp;finally:<br>
+                        &emsp;&emsp;f.close()<br>
+                        except:<br>
+                        &emsp;&emsp;print("Valami hiba történt a fájl megnyitásakor")<br>
+                        # A program a fájlobjektum nyitva hagyása nélkül folytatható.
+                    </div>
+
+                    <h2>Kivétel említése</h2>
+
+                    <p>
+                        Python-fejlesztőként dönthetsz úgy, hogy kivételt dobsz, ha egy feltétel előfordul.<br>
+                        Kivétel dobásához (vagy emeléséhez) használd a raise kulcsszót.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        # Hiba emelése és a program leállítása, ha x kisebb, mint 0:<br>
+                        x = -1<br>
+                        if x < 0:<br>
+                            &emsp;&emsp;raise Exception("Bocsi, szám 0 alatt nem engedélyezett")
+                    </div>
+
+                    <p>
+                        Meghatározhatod, hogy milyen hibát jelezzen, és milyen szöveget nyomtatjon ki a felhasználónak.
+                    </p>
+
+                    <div id="myDiv" class="code">
+                        # Emelje fel a TypeError kivételt, ha az x nem egész szám:<br>
+                        x = "hello"<br>
+                        if not type(x) is int:<br>
+                        &emsp;&emsp;raise TypeError("Csak egész számok megengedettek")
+                    </div>
+
                     <iframe src="quiz/14.html"></iframe>
                     <div class="nextPrevButtons">
                         <button onclick="openChapter2('lsn14')">Vissza</button>
@@ -1208,7 +1343,7 @@
             function getKeywordPos(typ, txt, func) {
                 var words, i, pos, rpos = -1, rpos2 = -1, patt;
                 if (typ == "js") {
-                    words = ["do", "while", "break", "def", "if", "elif", "else", "for", "in", "import", "continue"];
+                    words = ["do", "while", "break", "def", "if", "elif", "else", "for", "in", "import", "continue", "raise", "try", "except", "finally"];
                 }
                 for (i = 0; i < words.length; i++) {
                     pos = txt.indexOf(words[i]);
@@ -1227,7 +1362,7 @@
             function getConstantPos(typ, txt, func) {
                 var words, i, pos, rpos = -1, rpos2 = -1, patt;
                 if (typ == "js") {
-                    words = ["True", "False", "None", "class", "self"];
+                    words = ["True", "False", "None", "class", "self", "not", "or", "is", "and"];
                 }
                 for (i = 0; i < words.length; i++) {
                     pos = txt.indexOf(words[i]);
@@ -1246,7 +1381,7 @@
             function getFunctionPos(typ, txt, func) {
                 var words, i, pos, rpos = -1, rpos2 = -1, patt;
                 if (typ == "js") {
-                    words = ["print", "input", "type", "randrange"];
+                    words = ["print", "input", "type", "randrange", "open", "write", "close"];
                 }
                 for (i = 0; i < words.length; i++) {
                     pos = txt.indexOf(words[i]);
@@ -1265,7 +1400,7 @@
             function getClassPos(typ, txt, func) {
                 var words, i, pos, rpos = -1, rpos2 = -1, patt;
                 if (typ == "js") {
-                    words = ["str", "int", "range", "float", "complex", "random", "bool"];
+                    words = ["str", "int", "range", "float", "complex", "random", "bool", "NameError", "TypeError", "Exception"];
                 }
                 for (i = 0; i < words.length; i++) {
                     pos = txt.indexOf(words[i]);
