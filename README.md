@@ -44,7 +44,7 @@
   - ✖ Ellenőrzőkvíz
 - Bemenet, kimenet
   - ✔️ Leírás + példák
-  - ✖ Oktatóvideó
+  - ➰ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Boolean-ok
   - ✔️ Leírás + példák
@@ -69,10 +69,10 @@
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Class-ok
-  - ➰ Leírás + példák
-  - ✖ Oktatóvideó
+  - ✔️ Leírás + példák
+  - ✔️ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Try...Except
-  - ✖ Leírás + példák
+  - ✔️ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
