@@ -144,13 +144,9 @@ form {
 }
 
 input[type="radio"] {
-  /* Add if not using autoprefixer */
   -webkit-appearance: none;
-  /* Remove most all native input styles */
   appearance: none;
-  /* For iOS < 15 */
   background-color: var(--form-background);
-  /* Not removed via appearance */
   margin: 0;
 
   font: inherit;
@@ -163,6 +159,8 @@ input[type="radio"] {
 
   display: grid;
   place-content: center;
+
+  cursor: pointer;
 }
 
 input[type="radio"]::before {
@@ -173,7 +171,6 @@ input[type="radio"]::before {
   transform: scale(0);
   transition: 120ms transform ease-in-out;
   box-shadow: inset 1em 1em var(--form-control-color);
-  /* Windows High Contrast Mode */
   background-color: CanvasText;
 }
 
@@ -183,4 +180,37 @@ input[type="radio"]:checked::before {
 
 #results {
   margin-bottom: 20px;
+}
+
+.console {
+    background-color: #000;
+    color: #fff;
+    margin-top: 20px;
+    font-family: Consolas;
+    padding-bottom: 5px;
+}
+
+.console::before {
+  display: block;
+  content: 'Kimenet:';
+  background-color: #dddddd;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  background-color: #0000;
+  border: 2px solid #777;
+  border-radius: 5px;
+}
+
+input[type="text"]:hover {
+  background-color: #0000;
+  border: 2px solid #000;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus {
+  background-color: #fff;
 }
