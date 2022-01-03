@@ -44,25 +44,25 @@
   - ✖ Ellenőrzőkvíz
 - Bemenet, kimenet
   - ✔️ Leírás + példák
-  - ➰ Oktatóvideó
+  - ✔️ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Boolean-ok
   - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - Elágazások
   - ✔️ Leírás + példák
-  - ✖ Oktatóvideó
+  - ➰ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Listák
   - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - For
   - ✔️ Leírás + példák
-  - ✖ Oktatóvideó
+  - ✔️ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - While
   - ✔️ Leírás + példák
-  - ✖ Oktatóvideó
+  - ➰ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Függvények
   - ✔️ Leírás + példák
