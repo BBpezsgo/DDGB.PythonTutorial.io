@@ -30,7 +30,7 @@
 - Szintaxis
   - ✔️ Leírás + példák
   - ✔️ Ellenőrzőkvíz
-- VMegjegyzések
+- Megjegyzések
   - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - Változók
@@ -64,7 +64,7 @@
   - ✔️ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
-- Function-ok
+- Függvények
   - ✔️ Leírás + példák
   - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
