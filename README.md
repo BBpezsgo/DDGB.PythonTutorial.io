@@ -55,14 +55,14 @@
   - ✖ Ellenőrzőkvíz
 - Listák
   - ✔️ Leírás + példák
-  - ✖ Ellenőrzőkvíz
+  - ✔️ Ellenőrzőkvíz
 - For
   - ✔️ Leírás + példák
   - ✔️ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - While
   - ✔️ Leírás + példák
-  - ➰ Oktatóvideó
+  - ✔️ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Függvények
   - ✔️ Leírás + példák
