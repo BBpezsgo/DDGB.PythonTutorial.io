@@ -51,7 +51,7 @@
   - ✖ Ellenőrzőkvíz
 - Elágazások
   - ✔️ Leírás + példák
-  - ➰ Oktatóvideó
+  - ✔️ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Listák
   - ✔️ Leírás + példák
