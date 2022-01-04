@@ -50,7 +50,7 @@
 - Elágazások
   - ✔️ Leírás + példák
   - ✔️ Oktatóvideó
-  - ✖ Ellenőrzőkvíz
+  - ✔️ Ellenőrzőkvíz
 - Listák
   - ✔️ Leírás + példák
   - ✔️ Ellenőrzőkvíz
