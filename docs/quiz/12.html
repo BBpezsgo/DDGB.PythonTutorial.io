@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h1>Quiz</h1>
+        <div class="quiz-container">
+            <div id="quiz"></div>
+        </div>
+        <div style="position: absolute; bottom: 0px; width: 100%;">
+            <button id="previous">Előző</button>
+            <button id="next">Következő</button>
+            <button id="submit">Kész</button>
+            <div id="results"></div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            function buildQuiz() {
+                const output = [];
+
+                myQuestions.forEach((currentQuestion, questionNumber) => {
+                    const answers = [];
+
+                    if (currentQuestion.type == "select") {
+                        for (letter in currentQuestion.answers) {
+
+                            answers.push(
+                                `<label class="form-control">
+                                        <input type="radio" name="question${questionNumber}" value="${letter}">
+                                        ${currentQuestion.answers[letter]}
+                                    </label>`
+                            );
+                        }
+
+                        output.push(
+                            `<div class="slide">
+                                    <div class="wrong" id="wrong${questionNumber}"><img src="wrong.png">Helytelen válasz!</div>
+                                    <div class="correct" id="correct${questionNumber}"><img src="correct.png">Helyes!</div>
+                                    <div class="question"> ${currentQuestion.question} </div>
+                                    <div class="answers"> ${answers.join("")} </div>
+                                </div>`
+                        );
+                    } else if (currentQuestion.type == "type") {
+                        answers.push(currentQuestion.text.replace("{}", "<input type=\"text\" id=\"typeAnswer" + questionNumber + "\">"));
+
+                        output.push(
+                            `<div class="slide">
+                                <div class="wrong" id="wrong${questionNumber}"><img src="wrong.png">Helytelen válasz!</div>
+                                <div class="correct" id="correct${questionNumber}"><img src="correct.png">Helyes!</div>
+                                    <div class="question"> Egészítsd ki! </div>
+                                <div class="answers"> ${answers.join("")} </div>
+                            </div>`
+                        );
+                    }
+                });
+
+                quizContainer.innerHTML = output.join('');
+            }
+
+            function showResults() {
+                const answerContainers = quizContainer.querySelectorAll('.answers');
+
+                let numCorrect = 0;
+
+                myQuestions.forEach((currentQuestion, questionNumber) => {
+                    const correctDiv = document.getElementById("correct" + questionNumber)
+                    const wrongDiv = document.getElementById("wrong" + questionNumber)
+
+                    if (currentQuestion.type == "select") {
+                        const answerContainer = answerContainers[questionNumber];
+                        const selector = `input[name=question${questionNumber}]:checked`;
+                        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+
+                        if (userAnswer === currentQuestion.correctAnswer) {
+                            numCorrect++;
+
+                            correctDiv.style.display = "block"
+                            wrongDiv.style.display = "none"
+                        } else {
+                            correctDiv.style.display = "none"
+                            wrongDiv.style.display = "block"
+                        }
+                    } else if (currentQuestion.type == "type") {
+                        const textBox = document.getElementById("typeAnswer" + questionNumber)
+                        if (textBox.value == currentQuestion.correctAnswer) {
+                            numCorrect++;
+
+                            correctDiv.style.display = "block"
+                            wrongDiv.style.display = "none"
+                        } else {
+                            correctDiv.style.display = "none"
+                            wrongDiv.style.display = "block"
+                        }
+                    }
+                });
+
+                resultsContainer.innerHTML = `${numCorrect}/${myQuestions.length}`;
+            }
+
+            function showSlide(n) {
+                slides[currentSlide].classList.remove('active-slide');
+                slides[n].classList.add('active-slide');
+                currentSlide = n;
+                if (currentSlide === 0) {
+                    previousButton.style.display = 'none';
+                }
+                else {
+                    previousButton.style.display = 'inline-block';
+                }
+                if (currentSlide === slides.length - 1) {
+                    nextButton.style.display = 'none';
+                    submitButton.style.display = 'inline-block';
+                }
+                else {
+                    nextButton.style.display = 'inline-block';
+                    submitButton.style.display = 'none';
+                }
+            }
+
+            function showNextSlide() {
+                showSlide(currentSlide + 1);
+            }
+
+            function showPreviousSlide() {
+                showSlide(currentSlide - 1);
+            }
+
+            const quizContainer = document.getElementById('quiz');
+            const resultsContainer = document.getElementById('results');
+            const submitButton = document.getElementById('submit');
+            const myQuestions = [
+                {
+                    type: "type",
+                    text: "Hogyan hozol létre függvényt?(parncs)",
+                    correctAnswer: "def"
+                },
+                {
+                    type: "select",
+                    question: "Igaz vagy Hamis. <brek> A függvényel lehet-e számológépet írni?",
+                    answers: {
+                        a: "Igaz",
+                        b: "Hamis"
+                    },
+                    correctAnswer: "a"
+                },
+                {
+                    type: "select",
+                    question: "Igaz vagy Hamis. <brek> A függvényel lehet-e másodfokú egyenletet megoldani?",
+                    answers: {
+                        a: "Igaz",
+                        b: "Hamis"
+                    },
+                    correctAnswer: "a"
+                }
+            ];
+
+            buildQuiz();
+
+            const previousButton = document.getElementById("previous");
+            const nextButton = document.getElementById("next");
+            const slides = document.querySelectorAll(".slide");
+            let currentSlide = 0;
+
+            showSlide(currentSlide);
+
+            submitButton.addEventListener('click', showResults);
+            previousButton.addEventListener("click", showPreviousSlide);
+            nextButton.addEventListener("click", showNextSlide);
+        })();
+
+    </script>
+</body>
+
+</html>
