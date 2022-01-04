@@ -20,8 +20,6 @@
 
 > Határidő: 2022. 01. 04.
 
-✖ > ➰ > ✔️
-
 # Feladatok:
 - ✔️ A weboldal alapja
 - ✖ A weboldal véglegeshez hasonló formája
