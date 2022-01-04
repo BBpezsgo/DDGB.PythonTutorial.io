@@ -144,25 +144,15 @@
             const myQuestions = [
                 {
                     type: "type",
-                    text: "x = {}('5.6')<div class='display=\"block\"'>print(type(x))</div><div class='console'>> float</div>",
-                    correctAnswer: "float"
-                },
-                {
-                    type: "select",
-                    question: "Szöveget csak '' közé lehet rakni. Igaz?",
-                    answers: {
-                        a: "Igaz",
-                        b: "Hamis"
-                    },
-                    correctAnswer: "b"
+                    text: "random.{}(5, 10) # Ez egy egész számot generál 5 és 10 között",
+                    correctAnswer: "randint"
                 },
                 {
                 type: "select",
-                question: "Milyen típusú ez a szám: 5j ?",
+                question: "A randint(a, b) függvény nem ad olyan számot, amit a paramétereknél adtunk meg. Igaz?",
                 answers: {
-                    a: "float",
-                    b: "complex",
-                    c: "int"
+                    a: "Igaz",
+                    b: "Hamis"
                 },
                 correctAnswer: "b"
                 }
