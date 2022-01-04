@@ -32,20 +32,20 @@
   - ✔️ Ellenőrzőkvíz
 - Megjegyzések
   - ✔️ Leírás + példák
-  - ✖ Ellenőrzőkvíz
+  - ✔️ Ellenőrzőkvíz
 - Változók
   - ✔️ Leírás + példák
-  - ✖ Ellenőrzőkvíz
+  - ✔️ Ellenőrzőkvíz
 - Számok
   - ✔️ Leírás + példák
-  - ✖ Ellenőrzőkvíz
+  - ✔️ Ellenőrzőkvíz
 - String-ek
   - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
 - Bemenet, kimenet
   - ✔️ Leírás + példák
   - ✔️ Oktatóvideó
-  - ✖ Ellenőrzőkvíz
+  - ✔️ Ellenőrzőkvíz
 - Boolean-ok
   - ✔️ Leírás + példák
   - ✖ Ellenőrzőkvíz
