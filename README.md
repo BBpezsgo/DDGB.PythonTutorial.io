@@ -64,7 +64,6 @@
   - ✖ Ellenőrzőkvíz
 - Függvények
   - ✔️ Leírás + példák
-  - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
 - Class-ok
   - ✔️ Leírás + példák
@@ -72,5 +71,4 @@
   - ✖ Ellenőrzőkvíz
 - Try...Except
   - ✔️ Leírás + példák
-  - ✖ Oktatóvideó
   - ✖ Ellenőrzőkvíz
